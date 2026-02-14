@@ -1,0 +1,41 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9F9F9"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#A8DADC"
+        android:title="노래로 배우는 일본어"
+        android:titleTextColor="#1D3557" />
+
+
+    <Button
+        android:id="@+id/btnAddSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="노래 추가하기"
+        android:backgroundTint="#F4A261"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSongs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+</LinearLayout>
